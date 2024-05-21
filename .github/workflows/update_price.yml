@@ -1,9 +1,9 @@
 name: Update
 on:
   schedule:
-    - cron: '*/1 * * * *'
+    - cron: '* * * * *'
 jobs:
-  test1:    
+  build:    
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
