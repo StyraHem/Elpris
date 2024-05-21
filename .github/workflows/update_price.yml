@@ -1,0 +1,16 @@
+name: Update
+on:
+  schedule:
+    - cron: '*/1 * * * *'
+jobs:
+  test1:    
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Run a one-line script
+        run: echo Hello, world!
+      - name: Run a multi-line script
+        run: |
+          echo Add other actions to build,
+          echo test, and deploy your project.
